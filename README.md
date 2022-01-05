@@ -1,4 +1,4 @@
-# personal-portfolio
+# Personal Portfolio
 This project based on the linter configuration. setup project built with html and css
 
 
@@ -18,7 +18,7 @@ This project based on the linter configuration. setup project built with html an
 👤 **Author1**
 
 - GitHub: [@HectorTorresE](https://github.com/HectorTorresE)
-- Twitter: [@HectorT00406915)](https://twitter.com/HectorT00406915)
+- Twitter: [@HectorT00406915](https://twitter.com/HectorT00406915)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
@@ -37,6 +37,3 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
