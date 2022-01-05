@@ -4,7 +4,7 @@ This project based on the linter configuration. setup project built with html an
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![image](https://user-images.githubusercontent.com/31547587/148134761-02a9ce94-c889-41e0-9166-9f8b893ac8fe.png)
+![image](https://user-images.githubusercontent.com/31547587/148271971-8b109ef0-3903-4d7b-9391-1d866a994a0a.png)
 
 
 ## Built With
