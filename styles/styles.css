@@ -117,6 +117,60 @@ body {
   border: 0;
 }
 
+.project-picture1 {
+  height: 205px;
+  background-image: url(../images/Rectangle_21.png);
+  background-size: 100%;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1px);
+}
+
+.project-picture2 {
+  height: 205px;
+  background-image: url(../images/Rectangle_22.png);
+  background-size: 100%;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1px);
+}
+
+.project-picture3 {
+  height: 205px;
+  background-image: url(../images/Rectangle_23.png);
+  background-size: 100%;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1px);
+}
+
+.project-picture4 {
+  height: 205px;
+  background-image: url(../images/Rectangle_24.png);
+  background-size: 100%;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1px);
+}
+
+.project-picture5 {
+  height: 205px;
+  background-image: url(../images/Rectangle_25.png);
+  background-size: 100%;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1px);
+}
+
+.project-picture6 {
+  height: 205px;
+  background-image: url(../images/Rectangle_26.png);
+  background-size: 100%;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1px);
+}
+
 .link-img {
   margin-left: 12px;
   height: 15.35px;
@@ -216,4 +270,8 @@ body {
   width: 102px;
   height: 102px;
   padding-left: 164px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
 }
