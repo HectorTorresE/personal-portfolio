@@ -61,7 +61,7 @@ body {
 }
 
 .projects {
-  display: grid;
+  float: inline-end;
 }
 
 .card {
@@ -273,8 +273,7 @@ body {
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
+  float: inherit;
 }
 /* this is for float version */
 
