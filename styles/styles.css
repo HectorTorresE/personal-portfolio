@@ -178,10 +178,9 @@ body {
 }
 
 .about-cards {
-  display: grid;
-  justify-content: center;
-  row-gap: 16px;
-  margin: 50px 0;
+  float: left;
+  margin: 50px;
+  padding-bottom: 50px;
 }
 
 .about-card {
@@ -198,6 +197,7 @@ body {
   padding: 80px;
   padding-top: 50px;
   padding-bottom: 90px;
+  position: :relative;
 }
 
 .about-card2 {
@@ -210,6 +210,7 @@ body {
 
 .about-1 {
   background: #1c528a;
+ 
 }
 
 .about-2 {
@@ -254,6 +255,11 @@ body {
   padding-left: 90%;
 }
 
+.img-float{
+   position: relative;
+   bottom: 25px;
+   right: 10px;
+}
 .about-img1 {
   width: 102px;
   height: 102px;
