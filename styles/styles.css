@@ -46,8 +46,8 @@ body {
 }
 
 .btn:hover {
-   background-color:cyan;
- }
+  background-color: cyan;
+}
 
 .description {
   font-family: 'Poppins', sans-serif;
@@ -352,7 +352,7 @@ input {
   justify-items: center;
 }
 
-.socials{
+.socials {
   margin-top: 25px;
   display: flex;
   list-style: none;
