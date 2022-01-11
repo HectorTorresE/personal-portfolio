@@ -21,6 +21,10 @@ This project based on the linter configuration. setup project built with html an
 - Twitter: [@HectorT00406915](https://twitter.com/HectorT00406915)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+👤 **Author2**
+
+- GitHub: [@Kinginthenorthcodez](https://github.com/Kinginthenorthcodez)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
