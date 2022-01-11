@@ -359,3 +359,15 @@ input {
   padding: 0;
   justify-content: space-between;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-footer {
+  width: 111px;
+  height: 74.02px;
+  left: 0px;
+  top: 4129px;
+}
