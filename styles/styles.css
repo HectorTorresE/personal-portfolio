@@ -879,13 +879,13 @@ input {
   }
 
   .started .description {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    letter-spacing: -0.01em; 
     color: #1A2236;
+    letter-spacing: -0.01em;
   }
 
   .started .info .form {
@@ -893,7 +893,8 @@ input {
     flex-direction: column;
   }
 
-  .started .info .form ul li input, .started .info .form ul li textarea {
+  .started .info .form ul li input,
+  .started .info .form ul li textarea {
     font-size: 16px;
     padding: 18px 0 18px 20px;
     font-weight: 400;
@@ -962,7 +963,6 @@ input {
 }
 
 @media (min-width: 992px) {
-
   .started .image1 {
     display: block;
   }
@@ -973,7 +973,6 @@ input {
 }
 
 @media (max-width: 992px) {
-
   .visible {
     display: none;
   }
@@ -1002,7 +1001,6 @@ input {
 }
 
 @media (min-width: 992px) {
-
   .footer-desktop {
     background: #1a2236;
     margin: 0;
