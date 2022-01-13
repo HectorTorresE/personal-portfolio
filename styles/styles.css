@@ -351,10 +351,6 @@ body {
   border: 1px solid #1a2236;
 }
 
-.btn:hover {
-  background-color: cyan;
-}
-
 .description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -742,7 +738,6 @@ input {
     justify-content: center;
     row-gap: 16px;
     grid-template-columns: 50% 50%;
-    row-gap: 0;
   }
 
   .about .skills .card-languages {
@@ -860,7 +855,8 @@ input {
   }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+
   .started {
     position: relative;
     background: #f9f9fa;
@@ -966,6 +962,7 @@ input {
 }
 
 @media (min-width: 992px) {
+
   .started .image1 {
     display: block;
   }
@@ -976,6 +973,7 @@ input {
 }
 
 @media (max-width: 992px) {
+
   .visible {
     display: none;
   }
@@ -1004,6 +1002,7 @@ input {
 }
 
 @media (min-width: 992px) {
+
   .footer-desktop {
     background: #1a2236;
     margin: 0;
