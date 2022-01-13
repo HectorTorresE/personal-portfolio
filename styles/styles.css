@@ -3,13 +3,10 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-
-
 .toolbar {
   display: flex;
   justify-content: space-between;
 }
-
 
 .toolbar .navbar-icon {
   margin-right: 16px;
@@ -48,6 +45,7 @@ body {
   .headline-mobile .footer-image {
     display: none;
   }
+
 }
 
 .headline {
@@ -152,7 +150,7 @@ body {
     margin-top: 100px;
   }
 
-  .projects header{
+  .projects header {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -332,13 +330,6 @@ body {
     margin-left: 252px;
     margin-right: 498px;
   }
-
-  .projects .projects4 .img7  {
-  }
-
-  .projects .projects4 .img8  {
-  }
-
 }
 
 .headline-mobile {
@@ -392,6 +383,7 @@ body {
 
 
 @media (min-width: 992px) {
+
   .projects-mobile {
     display: none;
   }
@@ -401,8 +393,6 @@ body {
   }
   
 }
-
-
 
 .card {
   background-color: #1a2236;
@@ -623,6 +613,7 @@ body {
   }
   
 }
+
 .lblForm {
   font-family: 'Poppins', sans-serif;
   position: absolute;
@@ -708,6 +699,7 @@ input {
 }
 
 @media (min-width: 992px) {
+
   .footer {
     display: none;
   }
@@ -755,8 +747,8 @@ input {
   color: #1a2236;
 }
 
-
 @media (min-width: 992px) {
+
   .about {
     display: flex;
     flex-direction: row;
@@ -878,16 +870,18 @@ input {
     height: 70px;
   }
 
-  .about article{
+  .about article {
     display: block;
   }
-  .about section{
+
+  .about section {
     display: block;
   }
 
 }
 
 @media (min-width: 992px) {
+  
   .started {
     position: relative;
     background: #f9f9fa;
@@ -896,9 +890,11 @@ input {
     align-items: center;
     margin-top: 100px;
   }
+
   .visible{
     display: block;
   }
+
   .started .info {
     width: 558px;
   }
@@ -980,29 +976,37 @@ input {
     margin-bottom: 100px;
   }
 }
+
 .about article{
   display: none;
 }
+
 .about section{
   display: none;
 }
 
 @media (min-width: 992px) {
+
   .started .image1 {
     display: block;
   }
+
   .started .image2 {
     display: block;
   }
+
 }
 
 @media (max-width: 992px) {
+
   .visible {
     display: none;
   }
+
   .footer-desktop {
     display: none;
   }
+
 }
 
 .started .image1 {
@@ -1031,6 +1035,7 @@ input {
     height: 100px;
     padding-top: 32px;
   }
+
   .footer-box {
     display: flex;
     flex-direction: row;
@@ -1063,4 +1068,3 @@ input {
     text-decoration: none;
   }
 }
-
