@@ -214,17 +214,67 @@ body {
 
 .about-1:hover {
    background: green;
-   transition: ease-in-out 2s;
+   transition: ease-in-out 0.5s;
 }
 
 .about-2:hover {
   background: orange;
-  transition: ease-in-out 2s;
+  transition: ease-in-out 0.5s;
 }
 
 .about-3:hover {
   background: black;
-  transition: ease-in-out 2s;
+  transition: ease-in-out 0.5s;
+}
+
+.about-1 {
+  animation-duration: 3s;
+  animation-name: slide;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.about-2 {
+  animation-duration: 3s;
+  animation-name: slide2;
+}
+
+@keyframes slide2 {
+  from {
+    margin-right: 0%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 100%;
+    width: 100%;
+  }
+}
+.about-3 {
+  animation-duration: 3s;
+  animation-name: slide3;
+}
+
+@keyframes slide3 {
+  from {
+    margin-bottom: 45%;
+    width: 300%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
 }
 
 .about-card2 {
