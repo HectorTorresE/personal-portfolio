@@ -856,7 +856,6 @@ input {
 }
 
 @media (min-width: 992px) {
-
   .started {
     position: relative;
     background: #f9f9fa;
@@ -884,7 +883,7 @@ input {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #1A2236;
+    color: #1a2236;
     letter-spacing: -0.01em;
   }
 
