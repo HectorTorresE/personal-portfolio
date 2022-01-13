@@ -42,11 +42,19 @@ body {
   text-align: center;
   color: #fff;
   height: 50px;
-  border: 0;
+  border: 1px solid #1a2236;
 }
 
 .btn:hover {
-  background-color: cyan;
+  background-color: #fff;
+  color: #1a2236;
+  transition: ease-in-out 1s;
+}
+
+
+
+.btn:focus span {
+  color: #1a2236;
 }
 
 .description {
@@ -204,6 +212,21 @@ body {
   padding-bottom: 90px;
 }
 
+.about-1:hover {
+   background: green;
+   transition: ease-in-out 2s;
+}
+
+.about-2:hover {
+  background: orange;
+  transition: ease-in-out 2s;
+}
+
+.about-3:hover {
+  background: black;
+  transition: ease-in-out 2s;
+}
+
 .about-card2 {
   width: 189px;
   height: 189px;
@@ -303,6 +326,10 @@ body {
   position: relative;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 8px;
+}
+
+.box:focus {
+  transition: all 2s ease-in-out;
 }
 
 .txtForm {
