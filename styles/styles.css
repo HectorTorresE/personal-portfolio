@@ -156,24 +156,24 @@ body {
     align-items: flex-start;
   }
 
-  .projects .name  {
+  .projects .name {
     padding-right: 100px;
     transform: rotate(-90deg);
     font-size: 110px;
   }
 
-  .projects .dots  {
+  .projects .dots {
     padding-bottom: 110px;
     align-self: baseline;
   }
 
-  .projects .card-deskotop .img-size  {
+  .projects .card-deskotop .img-size {
     background-image: url(../images/Rectangle_21.svg);
     width: 960px;
     height: 200px;
   }
 
-  .projects .card-deskotop .img2  {
+  .projects .card-deskotop .img2 {
     background-image: url(../images/Rectangle_25.svg);
     background-repeat: no-repeat;
     width: 100%;
@@ -181,15 +181,15 @@ body {
     background-color: #fff;
   }
 
-  .projects .card-deskotop .img3  {
+  .projects .card-deskotop .img3 {
     background-image: url(../images/Rectangle_26.svg);
     background-repeat: no-repeat;
     width: 100%;
-    margin-left: 0px;
     margin-top: 20px;
     height: 270px;
     background-color: #a7b5b3;
   }
+
   .projects .card-deskotop {
     background-repeat: no-repeat;
     background-color: #1a2236;
@@ -299,11 +299,11 @@ body {
     justify-content: center;
   }
 
-  .projects .projects3 .img4  {
+  .projects .projects3 .img4 {
     width: 800px;
     height: 465px;
   }
-  .projects .projects3 .img5  {
+  .projects .projects3 .img5 {
     width: 600px;
     height: 275.42px;
     margin-top: 210px;
@@ -317,13 +317,13 @@ body {
     align-items: flex-start;
   }
 
-  .projects .projects4 .group  {
+  .projects .projects4 .group {
     display: flex;
     align-items: flex-start;
     margin-right: 10px;
   }
 
-  .projects .projects4 .img6  {
+  .projects .projects4 .img6 {
     width: 211.7px;
     height: 124.04px;
     align-content: flex-start;
