@@ -41,11 +41,10 @@ body {
   .headline-mobile .intro {
     display: none;
   }
-  
+
   .headline-mobile .footer-image {
     display: none;
   }
-
 }
 
 .headline {
@@ -205,7 +204,6 @@ body {
     backdrop-filter: blur(1px);
     width: 400px;
     height: 300px;
-    margin-left: 0px;
     flex-direction: column;
   }
 
@@ -276,16 +274,6 @@ body {
     font-size: 15px;
     line-height: 80%;
     color: #1a2236;
-    margin-left: 0px;
-  }
-
-  .projects .card-deskotop .languages {
-    margin-left: 10px;
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    gap: 20px;
-    justify-content: start;
   }
 
   .projects2 .card-deskotop a {
@@ -383,7 +371,6 @@ body {
 
 
 @media (min-width: 992px) {
-
   .projects-mobile {
     display: none;
   }
@@ -602,7 +589,6 @@ body {
   padding-left: 164px;
 }
 
-
 @media (min-width: 992px) {
   .about-mobile {
     display: none;
@@ -611,7 +597,7 @@ body {
   .about-mobile article {
     display: none;
   }
-  
+
 }
 
 .lblForm {
@@ -711,7 +697,7 @@ input {
   .footer section {
     display: none;
   }
-  
+
 }
 
 .img-footer {
@@ -803,7 +789,7 @@ input {
     background: #febf52;
   }
 
-  .about .skills .card-languages .image-languages{
+  .about .skills .card-languages .image-languages {
     background-image: url(../images/num.png);
     top: calc(100% - 102px);
     left: calc(100% - 102px);
@@ -820,7 +806,7 @@ input {
     align-self: flex-end;
   }
 
-  .about .skills .card-frameworks .image-frameworks{
+  .about .skills .card-frameworks .image-frameworks {
     background-image: url(../images/Group_18.png);
     top: calc(100% - 102px);
     left: calc(100% - 102px);
@@ -830,7 +816,7 @@ input {
     background-repeat: no-repeat;
   }
 
-  .about .skills .card-skills .image-skills{
+  .about .skills .card-skills .image-skills {
     background-image: url(../images/ic_skills.svg);
     top: calc(100% - 102px);
     left: calc(100% - 102px);
@@ -891,7 +877,7 @@ input {
     margin-top: 100px;
   }
 
-  .visible{
+  .visible {
     display: block;
   }
 
@@ -939,6 +925,7 @@ input {
     list-style: none;
     padding: 0;
   }
+
   .started .info .form .col1 {
     grid-row: 1;
     grid-column: 1;
@@ -977,11 +964,11 @@ input {
   }
 }
 
-.about article{
+.about article {
   display: none;
 }
 
-.about section{
+.about section {
   display: none;
 }
 
@@ -1044,7 +1031,7 @@ input {
     gap: 15px;
     width: 100%;
   }
-  
+
   .footer-box .socials {
     gap: 32px;
     color: #fff;
