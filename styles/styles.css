@@ -20,7 +20,6 @@ body {
   background-color: #fff;
 }
 
-
 .headline {
   display: none;
 }
@@ -54,7 +53,6 @@ body {
   text-decoration: none;
   color: #1a2236;
 }
-
 
 .projects {
   display: none;
@@ -430,7 +428,6 @@ input {
   color: #1a2236;
 }
 
-
 .about article {
   display: none;
 }
@@ -438,7 +435,6 @@ input {
 .about section {
   display: none;
 }
-
 
 .started .image1 {
   position: absolute;
@@ -522,6 +518,10 @@ input {
   .about .skills ul {
     padding: 0;
     margin: 0 25px;
+  }
+
+  .started h2 {
+    font-size: 110px;
   }
 
   .about .skills h2 {
@@ -632,10 +632,6 @@ input {
 
   .started .info {
     width: 558px;
-  }
-
-  .started h2 {
-    font-size: 110px;
   }
 
   .started .description {
@@ -766,6 +762,21 @@ input {
     margin-top: 100px;
   }
 
+  .dots {
+    display: block;
+  }
+
+  .projects .name {
+    padding-right: 100px;
+    transform: rotate(-90deg);
+    font-size: 110px;
+  }
+
+  .projects .dots {
+    padding-bottom: 110px;
+    align-self: baseline;
+  }
+
   .headline .intro-desktop {
     display: flex;
     flex-direction: column;
@@ -792,10 +803,6 @@ input {
     font-size: 110px;
   }
 
-  .dots {
-    display: block;
-  }
-
   .img-intro {
     display: block;
   }
@@ -809,17 +816,6 @@ input {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-  }
-
-  .projects .name {
-    padding-right: 100px;
-    transform: rotate(-90deg);
-    font-size: 110px;
-  }
-
-  .projects .dots {
-    padding-bottom: 110px;
-    align-self: baseline;
   }
 
   .projects .card-deskotop .img-size {
@@ -840,7 +836,7 @@ input {
     background-image: url(../images/Rectangle_26.svg);
     background-repeat: no-repeat;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
     height: 270px;
     background-color: #a7b5b3;
     margin-top: 18px;
@@ -862,7 +858,7 @@ input {
     width: 400px;
     height: 300px;
     flex-direction: column;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .projects .card-deskotop .title {
@@ -901,7 +897,7 @@ input {
     line-height: 80%;
     color: #1a2236;
     margin-left: 60px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .projects .card-deskotop a {
@@ -940,7 +936,7 @@ input {
     font-size: 15px;
     line-height: 80%;
     color: #1a2236;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .projects2 .card-deskotop a {
