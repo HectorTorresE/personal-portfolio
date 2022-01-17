@@ -1,11 +1,11 @@
 # Personal Portfolio
-This project based on the linter configuration. setup project built with html and css
 
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ![image](https://user-images.githubusercontent.com/31547587/148271971-8b109ef0-3903-4d7b-9391-1d866a994a0a.png)
 
+Link: https://hectortorrese.github.io/personal-portfolio/
 
 ## Built With
 
