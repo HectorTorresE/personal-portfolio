@@ -4,6 +4,7 @@ const headerImg = document.getElementById('headerImg');
 const menuClose = document.getElementById('menuClose');
 
 openAndClose = function () {
+  
   if (Menu.classList.contains('MenuInvisible')){
     Menu.classList.remove('MenuInvisible');
     Menu.classList.add('MenuVisible');
