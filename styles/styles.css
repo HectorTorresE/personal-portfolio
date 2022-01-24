@@ -37,14 +37,13 @@ body {
   height: 877px;
 }
 
-.MenuVisible{
+.MenuVisible {
   display: block;
 }
 
-.MenuInvisible{
+.MenuInvisible {
   display: none;
 }
-
 
 .mobileMenu {
   list-style: none;
@@ -53,18 +52,17 @@ body {
   text-align: center;
 }
 
-.mobileMenu a{
+.mobileMenu a {
   text-decoration: none;
   color: black;
-  
 }
 
-.menuClose  {
+.menuClose {
   margin-bottom: 75px;
   margin-left: 60px;
 }
 
-.dots2  {
+.dots2 {
   margin-left: 60px;
 }
 
