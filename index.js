@@ -1,10 +1,8 @@
-let btnMenu = document.getElementById('btn');
-let Menu = document.getElementById('MenuP');
-let headerImg = document.getElementById('headerImg');
-let menuClose = document.getElementById('menuClose');
-let links = document.querySelectorAll('.mobileMenu li a');
-
-
+const btnMenu = document.getElementById('btn');
+const Menu = document.getElementById('MenuP');
+const headerImg = document.getElementById('headerImg');
+const menuClose = document.getElementById('menuClose');
+const links = document.querySelectorAll('.mobileMenu li a');
 
 const openAndClose = function () {
   if (Menu.classList.contains("MenuInvisible")){
