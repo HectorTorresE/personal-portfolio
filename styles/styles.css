@@ -37,6 +37,35 @@ body {
   height: 877px;
 }
 
+.MenuVisible {
+  display: block;
+}
+
+.MenuInvisible {
+  display: none;
+}
+
+.mobileMenu {
+  list-style: none;
+  font-size: 16px;
+  line-height: 300%;
+  text-align: center;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menuClose {
+  margin-bottom: 75px;
+  margin-left: 60px;
+}
+
+.dots2 {
+  margin-left: 60px;
+}
+
 .toolbar .navbar .nav-links {
   list-style: none;
   padding: 0;
@@ -707,6 +736,10 @@ input {
     height: 70px;
     align-self: center;
     margin-bottom: 100px;
+  }
+
+  .menuMobile {
+    text-decoration: none;
   }
 
   .started .image1 {

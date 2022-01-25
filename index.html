@@ -20,9 +20,9 @@
     </script>
 
 <body>
-    <header class="toolbar">
+    <header id="headerImg" class="toolbar">
         <img src="images/image_geometry_1.png" alt="toolbar image">
-        <img class="navbar-icon" src="images/ic_menu.svg" alt="navbar menu">
+        <img id="btn" class="navbar-icon" src="images/ic_menu.svg" alt="navbar menu">
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="#Hello">Hello</a></li>
@@ -32,11 +32,22 @@
             </ul>
         </nav>
     </header>
+    <section id="MenuP" class="MenuInvisible">
+        <img src="images/image_geometry_menu_1.svg" alt="menu image">
+        <img id="menuClose" class="menuClose" onclick="" src="images/Union24.png" alt="navbar menu">
+        <ul class="mobileMenu">
+            <li><a href="#HelloM">Hello</a></li>
+            <li><a href="#PortfolioM">Portfolio</a></li>
+            <li><a href="#AboutM">About</a></li>
+            <li><a href="#ContactM">Contact</a></li>
+        </ul>
+        <img class="dots2" onclick="" src="images/Group_50.png" alt="navbar menu">
+    </section>
 
 
     <main>
 
-        <section class="headline-mobile">
+        <section id="HelloM" class="headline-mobile">
             <section class="intro">
                 <h1 class="name">Hector Torres</h1>
                 <p class="description">Hello! I am a software developer! I can help you build a product, feature or
@@ -45,7 +56,7 @@
                     of my works. If you like what you see and have a project you need coded, don’t hesitate and contact
                     me.
                 </p>
-                <button class="btn" type="button">Start collaboration</button>
+                <button id="menu" class="btn" type="button">Start collaboration</button>
             </section>
             <img class="footer-image" src="images/image_geometry_2.png" alt="footer image">
         </section>
@@ -64,7 +75,7 @@
         </section>
 
 
-        <section class="projects-mobile">
+        <section id="PortfolioM" class="projects-mobile">
             <h1 class="name intro"> Projects </h1>
             <article>
                 <section class="project-picture1"></section>
@@ -242,7 +253,7 @@
             </article>
         </section>
 
-        <section class="about-mobile intro">
+        <section id="AboutM" class="about-mobile intro">
             <article class="about-intro">
                 <h1 class="name">About</h1>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -355,7 +366,7 @@
 
     <footer class="footer" id="footer">
         <img class="img-footer" src="images/image_geometry_1.png" alt="footer image">
-        <section class="intro">
+        <section id="ContactM" class="intro">
             <h2 class="name">Get started</h2>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna.</p>
@@ -404,6 +415,7 @@
             </div>
         </section>
     </footer>
+    <script src="index.js"></script>
 
 </body>
 
