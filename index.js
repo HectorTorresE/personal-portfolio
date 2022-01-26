@@ -13,6 +13,16 @@ const portfolioDMenu = document.getElementById('portfolioDMenu');
 const PDBtn = document.getElementById('PDBtn');
 const projectCloseMD = document.getElementById('projectCloseMD');
 
+const Form = document.getElementById('form');
+let email = document.getElementById('email');
+let FormError = document.getElementById('lblError');
+
+const FormD = document.getElementById('formD');
+let FormErrorD = document.getElementById('lblErrorD');
+let emailD = document.getElementById('emailD');
+
+
+
 const openAndClose = function () {
   if (Menu.classList.contains('MenuInvisible')) {
     Menu.classList.remove('MenuInvisible');
@@ -130,3 +140,4 @@ const projects = [
     linkToSource: '#',
   },
 ];
+

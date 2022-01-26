@@ -582,6 +582,16 @@ body {
   color: #7d7c84;
 }
 
+.lblFormError {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: red !important;
+}
+
 .info {
   list-style: none;
   padding: 0;
