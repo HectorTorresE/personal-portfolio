@@ -79,3 +79,54 @@ menuClose.addEventListener('click', openAndClose);
 links.forEach((element) => {
   element.addEventListener('click', closeMenuMobile);
 });
+
+const projects = [
+  {
+    image: '../images/Rectangle_21.png',
+    title: 'Project 1',
+    languages: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+    linkLiveVersion: '#',
+    linkToSource: '#',
+  },
+  {
+    image: '../images/Rectangle_22.png',
+    title: 'Project 2',
+    languages: ['HTML/CSS', 'Ruby on Rails', '+1'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+    linkLiveVersion: '#',
+    linkToSource: '#',
+  },
+  {
+    image: '../images/Rectangle_23.png',
+    title: 'Project 3',
+    languages: ['HTML/CSS', 'Ruby on Rails', '+1'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+    linkLiveVersion: '#',
+    linkToSource: '#',
+  },
+  {
+    image: '../images/Rectangle_24.png',
+    title: 'Project 4',
+    languages: ['HTML/CSS', 'Ruby on Rails', '+1'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+    linkLiveVersion: '#',
+    linkToSource: '#',
+  },
+  {
+    image: '../images/Rectangle_25.png',
+    title: 'Project 5',
+    languages: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+    linkLiveVersion: '#',
+    linkToSource: '#',
+  },
+  {
+    image: '../images/Rectangle_26.png',
+    title: 'Project 6',
+    languages: ['HTML/CSS', 'Ruby on Rails', '+1'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
+    linkLiveVersion: '#',
+    linkToSource: '#',
+  },
+];
