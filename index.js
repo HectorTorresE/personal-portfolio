@@ -106,10 +106,6 @@ FormD.addEventListener('submit', (e) => {
   }
 });
 
-let userEmailD = document.getElementById('emailD').value;
-let userNameD= document.getElementById('nameD').value;
-let userEmail = document.getElementById('email').value;
-let userName = document.getElementById('name').value;
 
 FormD.addEventListener('submit', (e) => {
   if (emailD.value !== emailD.value.toLowerCase()) {
@@ -120,14 +116,6 @@ FormD.addEventListener('submit', (e) => {
   }
 });
 
-let Email = document.getElementById('emailD');
-
-Email.addEventListener('change', () => {
-  if (window.localStorage) {
-    localStorage.setItem("name" , userEmailD);
-    localStorage.setItem("email" , userNameD);
-  }
-});
 
 function storageAvailable(type) {
   let storage;
