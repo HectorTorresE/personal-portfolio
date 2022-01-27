@@ -131,8 +131,8 @@ function popUp() {
 
 function portfolioD() {
   projects.map((el, i) => {
-    const mg = 'card-deskotop' + (i + 1);
-    const mg1 = 'projects' + (i + 1);
+    const mg = `card-deskotop${i + 1}`;
+    const mg1 = `projects${i + 1}`;
     let project = document.getElementById(mg);
     if (i > 1) {
       project = document.getElementById(mg1);
