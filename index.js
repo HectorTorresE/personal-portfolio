@@ -259,8 +259,6 @@ function popUpD() {
   });
 }
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
   portfolio();
   popUp()
