@@ -63,15 +63,15 @@ body {
 }
 
 .projectCloseM {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-left: 100%;
   padding-left: 10%;
 }
 
 .projectClose {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-left: 90%;
 }
 
@@ -196,15 +196,15 @@ body {
   list-style-type: none;
   display: flex;
   gap: 0;
-  margin: 0px;
-  padding-left: 0px;
+  margin: 0;
+  padding-left: 0;
 }
 
 .projectPicture2 {
   list-style-type: none;
   display: flex;
-  gap: 0px;
-  margin: 0px;
+  gap: 0;
+  margin: 0;
   padding-left: 10px;
 }
 
@@ -212,8 +212,8 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  padding: 0px;
-  margin-top: 0px;
+  padding: 0;
+  margin-top: 0;
   gap: 20px;
   align-items: center;
 }
@@ -221,8 +221,8 @@ body {
 .linksPD {
   list-style-type: none;
   display: flex;
-  padding: 0px;
-  margin-top: 0px;
+  padding: 0;
+  margin-top: 0;
   gap: 20px;
   justify-content: center;
 }
@@ -231,16 +231,16 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 0px;
+  padding: 0;
   margin-top: 30px;
 }
 
 .flexP {
   display: flex;
   flex-direction: column;
-  padding: 0px;
-  margin-top: 0px;
-  gap: 0px;
+  padding: 0;
+  margin-top: 0;
+  gap: 0;
   align-items: center;
 }
 
@@ -248,15 +248,15 @@ body {
   list-style-type: none;
   display: flex;
   padding: 0;
-  margin: 0px;
+  margin: 0;
   gap: 10px;
 }
 
 .languages3 {
   list-style-type: none;
   display: flex;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   gap: 15px;
   margin-bottom: 20px;
 }
@@ -287,7 +287,6 @@ body {
 .projectMargin {
   padding: 5%;
   background: #fff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .projectBox {
@@ -304,7 +303,7 @@ body {
   align-items: baseline;
   width: 279px;
   margin-left: 6%;
-  gap: 0px;
+  gap: 0;
 }
 
 .projectsFlex h1 {
