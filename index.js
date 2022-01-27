@@ -141,3 +141,22 @@ const projects = [
   },
 ];
 
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    FormError.classList.remove('MenuInvisible');
+    e.preventDefault();
+  }
+  else {
+    FormError.classList.add('MenuInvisible');
+  }
+});
+
+FormD.addEventListener('submit', (e) => {
+  if (emailD.value !== emailD.value.toLowerCase()) {
+    FormErrorD.classList.remove('MenuInvisible');
+    e.preventDefault();
+  }
+  else {
+    FormErrorD.classList.add('MenuInvisible');
+  }
+});
