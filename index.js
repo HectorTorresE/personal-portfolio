@@ -14,12 +14,12 @@ const PDBtn = document.getElementById('PDBtn');
 const projectCloseMD = document.getElementById('projectCloseMD');
 
 const Form = document.getElementById('form');
-let email = document.getElementById('email');
-let FormError = document.getElementById('lblError');
+const email = document.getElementById('email');
+const FormError = document.getElementById('lblError');
 
 const FormD = document.getElementById('formD');
-let FormErrorD = document.getElementById('lblErrorD');
-let emailD = document.getElementById('emailD');
+const FormErrorD = document.getElementById('lblErrorD');
+const emailD = document.getElementById('emailD');
 
 
 
@@ -90,63 +90,11 @@ links.forEach((element) => {
   element.addEventListener('click', closeMenuMobile);
 });
 
-const projects = [
-  {
-    image: '../images/Rectangle_21.png',
-    title: 'Project 1',
-    languages: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
-    linkLiveVersion: '#',
-    linkToSource: '#',
-  },
-  {
-    image: '../images/Rectangle_22.png',
-    title: 'Project 2',
-    languages: ['HTML/CSS', 'Ruby on Rails', '+1'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
-    linkLiveVersion: '#',
-    linkToSource: '#',
-  },
-  {
-    image: '../images/Rectangle_23.png',
-    title: 'Project 3',
-    languages: ['HTML/CSS', 'Ruby on Rails', '+1'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
-    linkLiveVersion: '#',
-    linkToSource: '#',
-  },
-  {
-    image: '../images/Rectangle_24.png',
-    title: 'Project 4',
-    languages: ['HTML/CSS', 'Ruby on Rails', '+1'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
-    linkLiveVersion: '#',
-    linkToSource: '#',
-  },
-  {
-    image: '../images/Rectangle_25.png',
-    title: 'Project 5',
-    languages: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
-    linkLiveVersion: '#',
-    linkToSource: '#',
-  },
-  {
-    image: '../images/Rectangle_26.png',
-    title: 'Project 6',
-    languages: ['HTML/CSS', 'Ruby on Rails', '+1'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
-    linkLiveVersion: '#',
-    linkToSource: '#',
-  },
-];
-
-form.addEventListener('submit', (e) => {
+Form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
     FormError.classList.remove('MenuInvisible');
     e.preventDefault();
-  }
-  else {
+  } else {
     FormError.classList.add('MenuInvisible');
   }
 });
@@ -155,8 +103,7 @@ FormD.addEventListener('submit', (e) => {
   if (emailD.value !== emailD.value.toLowerCase()) {
     FormErrorD.classList.remove('MenuInvisible');
     e.preventDefault();
-  }
-  else {
+  } else {
     FormErrorD.classList.add('MenuInvisible');
   }
 });
