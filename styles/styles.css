@@ -70,8 +70,8 @@ body {
 }
 
 .projectClose {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-left: 90%;
 }
 
@@ -171,13 +171,13 @@ body {
 }
 
 .imgBorder {
-  border: 2px solid #1A2236;
+  border: 2px solid #1a2236;
   box-sizing: border-box;
   height: 54px;
 }
 
 .imgBorder2 {
-  border: 2px solid #1A2236;
+  border: 2px solid #1a2236;
   box-sizing: border-box;
   height: 175px;
 }
@@ -195,16 +195,16 @@ body {
 .projectPicture {
   list-style-type: none;
   display: flex;
-  gap: 0px;
-  margin: 0px;
-  padding-left: 0px;
+  gap: 0;
+  margin: 0;
+  padding-left: 0;
 }
 
 .projectPicture2 {
   list-style-type: none;
   display: flex;
-  gap: 0px;
-  margin: 0px;
+  gap: 0;
+  margin: 0;
   padding-left: 10px;
 }
 
@@ -212,8 +212,8 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  padding: 0px;
-  margin-top: 0px;
+  padding: 0;
+  margin-top: 0;
   gap: 20px;
   align-items: center;
 }
@@ -221,8 +221,8 @@ body {
 .linksPD {
   list-style-type: none;
   display: flex;
-  padding: 0px;
-  margin-top: 0px;
+  padding: 0;
+  margin-top: 0;
   gap: 20px;
   justify-content: center;
 }
@@ -231,16 +231,16 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 0px;
+  padding: 0;
   margin-top: 30px;
 }
 
 .flexP {
   display: flex;
   flex-direction: column;
-  padding: 0px;
-  margin-top: 0px;
-  gap: 0px;
+  padding: 0;
+  margin-top: 0;
+  gap: 0;
   align-items: center;
 }
 
@@ -248,15 +248,15 @@ body {
   list-style-type: none;
   display: flex;
   padding: 0;
-  margin: 0px;
+  margin: 0;
   gap: 10px;
 }
 
 .languages3 {
   list-style-type: none;
   display: flex;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   gap: 15px;
   margin-bottom: 20px;
 }
@@ -369,7 +369,6 @@ body {
 .projectMargin {
   padding: 5%;
   background: #fff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .projectBox {
@@ -386,11 +385,11 @@ body {
   align-items: baseline;
   width: 279px;
   margin-left: 6%;
-  gap: 0px;
+  gap: 0;
 }
 
 .projectsFlex h1 {
-  color: #1A2236;
+  color: #1a2236;
   font-style: normal;
   font-weight: bolder;
   font-size: 20px;
@@ -405,11 +404,10 @@ body {
   line-height: 27px;
   color: #1a2236;
   border: 2px solid #1a2236;
-  width: 246px ;
+  width: 246px;
   height: 30px;
   text-align: center;
   padding-top: 7px;
-
 }
 
 .PDLink {
@@ -418,7 +416,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: #1a2236;
-  width: 246px ;
+  width: 246px;
   height: 30px;
   text-align: center;
   margin-right: 400px;
@@ -430,12 +428,11 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: #1a2236;
-  width: 246px ;
+  width: 246px;
   height: 30px;
   text-align: center;
   margin-left: 400px;
 }
-
 
 .lang3 {
   font-family: 'Poppins', sans-serif;
@@ -672,6 +669,16 @@ body {
   line-height: 15px;
   letter-spacing: 0;
   color: #7d7c84;
+}
+
+.lblFormError {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: red !important;
 }
 
 .info {

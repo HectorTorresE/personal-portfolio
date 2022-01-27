@@ -74,13 +74,8 @@
             <img class="img-intro" src="images/image-geometry_1.svg" alt="footer image">
         </section>
 
-
-
-
-        <section class="projects-mobile">
-            <section id="popUp">
-
-            </section>
+     <section class="projects-mobile">
+            <section id="popUp"></section>
             <section id="PortfolioM">
                 <h1 class="name intro"> Projects </h1>
                 <div class="portfolioM"></div>
@@ -88,9 +83,29 @@
         </section>
 
 
-        <section id="Portfolio" class="projects">
+       <section id="Portfolio" class="projects">
             <section id="portfoiloDMenu"></section>
             <section id="PortfolioD">
+                <header>
+                    <h1 class="name">
+                        Projects
+                    </h1>
+                    <img class="dots" src="images/image_dots.svg" alt="footer image">
+                    <div id="card-deskotop1" class="card-deskotop">
+                    </div>
+                </header>
+                <div class="projects2">
+                    <img class="img-left" src="images/Rectangle_46.svg" alt="project2">
+                    <img src="images/image-geometry_2.svg" alt="img project2">
+                    <div id="card-deskotop2" class="card-deskotop">
+                    </div>
+                </div>
+                <div id="projects3" class="projects3">
+                </div>
+                <div id="projects4" class="projects4">
+                </div>
+            </section>
+        </section>
                 <header>
                     <h1 class="name">
                         Projects
@@ -216,7 +231,7 @@
                         tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    <form class="form" action="https://formspree.io/f/mpzbqaoe" method="post">
+                    <form id="formD" class="form" action="https://formspree.io/f/mpzbqaoe" method="post">
                         <ul>
                             <li class="box col1">
                                 <label for="nameD">
@@ -230,6 +245,9 @@
                                     Your email
                                 </label>
                                 <input id="emailD" class="email" type="email" name="email" placeholder="email" required>
+                                <label id="lblErrorD" class="lblFormError MenuInvisible" for="email">
+                                    The email should be lower case!
+                                </label>
                             </li>
                             <li class="col3">
                                 <textarea class="textarea" name="textarea" cols="30" rows="5" maxlength="500"
@@ -275,7 +293,7 @@
             <h2 class="name">Get started</h2>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna.</p>
-            <form action="https://formspree.io/f/mpzbqaoe" method="POST">
+            <form action="https://formspree.io/f/mpzbqaoe" method="POST" id="form">
                 <ul class="info">
                     <li class="box">
                         <label class="lblForm" for="name">
@@ -285,14 +303,17 @@
                             required>
                     </li>
                     <li class="box">
-                        <label class="lblForm" for="name">
+                        <label class="lblForm" for="email">
                             Your email
                         </label>
                         <input id="email" type="email" name="email" placeholder="email" class="txtForm" required>
+                        <label id="lblError" class="lblFormError MenuInvisible" for="email">
+                            The email should be lower case!
+                        </label>
                     </li>
                     <li class="box">
                         <textarea class="txtForm" name="textarea" cols="30" rows="5" maxlength="500"
-                            placeholder="Enter your message here..." required></textarea>
+                            placeholder="Enter your message here..." ></textarea>
                     </li>
                 </ul>
                 <input class="btn" type="submit" value="Start collaboration">

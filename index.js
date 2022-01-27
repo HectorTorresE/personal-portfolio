@@ -271,4 +271,68 @@ document.addEventListener('DOMContentLoaded', () => {
   popUp()
   portfolioD();
   popUpD();
+}
+                          
+const PortfolioM = document.getElementById('PortfolioM');
+const PortfolioMenu = document.getElementById('PortfolioMenu');
+const PBtn = document.getElementById('PBtn');
+const projectCloseM = document.getElementById('projectCloseM');
+
+const PortfolioD = document.getElementById('PortfolioD');
+const portfolioDMenu = document.getElementById('portfolioDMenu');
+const PDBtn = document.getElementById('PDBtn');
+const projectCloseMD = document.getElementById('projectCloseMD');
+
+const Form = document.getElementById('form');
+const email = document.getElementById('email');
+const FormError = document.getElementById('lblError');
+
+const FormD = document.getElementById('formD');
+const FormErrorD = document.getElementById('lblErrorD');
+const emailD = document.getElementById('emailD');
+
+const openAndClose = function () {
+  if (Menu.classList.contains('MenuInvisible')) {
+    Menu.classList.remove('MenuInvisible');
+    Menu.classList.add('MenuVisible');
+    headerImg.classList.add('MenuInvisible');
+  } else if (Menu.classList.contains('MenuVisible')) {
+    Menu.classList.add('MenuInvisible');
+    Menu.classList.remove('MenuVisible');
+    headerImg.classList.remove('MenuInvisible');
+  }
+};
+
+const closeMenuMobile = function () {
+  if (Menu.classList.contains('MenuVisible')) {
+    Menu.classList.add('MenuInvisible');
+    Menu.classList.remove('MenuVisible');
+    headerImg.classList.remove('MenuInvisible');
+  }
+};
+
+btnMenu.addEventListener('click', openAndClose);
+PBtn.addEventListener('click', openP);
+menuClose.addEventListener('click', openAndClose);
+
+links.forEach((element) => {
+  element.addEventListener('click', closeMenuMobile);
+});
+
+Form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    FormError.classList.remove('MenuInvisible');
+    e.preventDefault();
+  } else {
+    FormError.classList.add('MenuInvisible');
+  }
+});
+
+FormD.addEventListener('submit', (e) => {
+  if (emailD.value !== emailD.value.toLowerCase()) {
+    FormErrorD.classList.remove('MenuInvisible');
+    e.preventDefault();
+  } else {
+    FormErrorD.classList.add('MenuInvisible');
+  }
 });
