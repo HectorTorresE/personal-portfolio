@@ -59,7 +59,8 @@ function portfolio() {
   const project = document.querySelector('div.portfolioM');
   projects.map((el, i) => {
     const picture = document.createElement('div');
-    picture.classList.add('project-picture' + (i + 1));
+    let mg = 'project-picture' + (i + 1);
+    picture.classList.add(mg);
 
     const div1 = document.createElement('div');
     div1.classList.add('card');
@@ -87,19 +88,18 @@ function popUp() {
       Container.classList.add('projectsFlex');
 
       const close = document.createElement('img');
-      close.src = "images/Union24.png";
-      close.alt = "navbar menu close"
-      close.classList.add('projectCloseM')
+      close.src = 'images/Union24.png';
+      close.alt = 'navbar menu close';
+      close.classList.add('projectCloseM');
       close.addEventListener('click', () => {
         Container.remove();
         close.remove();
         const Psec = document.getElementById('PortfolioM');
-        Psec.classList.remove('MenuInvisible')
+        Psec.classList.remove('MenuInvisible');
       });
       project.appendChild(close);
       
-      Container.innerHTML = `
-      <h1 class="name">${projects[i].title}</h1>
+      Container.innerHTML = `<h1 class="name">${projects[i].title}</h1>
         <ul class="languages2">
         ${projects[i].languages.map((t) => `<li class="lang2">${t}</li>`).join('')}
         </ul>
@@ -131,19 +131,21 @@ function popUp() {
 
 function portfolioD() {
   projects.map((el, i) => {
-    let project = document.getElementById('card-deskotop' + (i + 1));
+    let mg = 'card-deskotop' + (i + 1);
+    let mg1 = 'projects' + (i + 1);
+    let project = document.getElementById(mg);
     if (i > 1) {
-      project = document.getElementById('projects' + (i + 1));
+      project = document.getElementById(mg1);
     }
     if (i === 2) {
       const picture = document.createElement('img');
       picture.classList.add('img4');
-      picture.src = "images/Rectangle_27.svg";
-      picture.alt = "project3img";
+      picture.src = 'images/Rectangle_27.svg';
+      picture.alt = 'project3img';
       const picture2 = document.createElement('img');
       picture2.classList.add('img5');
-      picture2.src = "images/image-geometry_3.svg";
-      picture2.alt = "project3img2";
+      picture2.src = 'images/image-geometry_3.svg';
+      picture2.alt = 'project3img2';
       project.appendChild(picture);
       project.appendChild(picture2);
       return null;
@@ -151,29 +153,29 @@ function portfolioD() {
     if (i === 3) {
       const picture = document.createElement('img');
       picture.classList.add('img6');
-      picture.src = "images/image-geometry_5.svg";
-      picture.alt = "project4img";
+      picture.src = 'images/image-geometry_5.svg';
+      picture.alt = 'project4img';
       project.appendChild(picture);
 
       const sec = document.createElement('section');
       sec.classList.add('group')
       const picture2 = document.createElement('img');
       picture2.classList.add('img7');
-      picture2.src = "images/image-geometry_4.svg";
-      picture2.alt = "project4img";
+      picture2.src = 'images/image-geometry_4.svg';
+      picture2.alt = 'project4img';
       sec.appendChild(picture2);
 
       const picture3 = document.createElement('img');
       picture3.classList.add('img8');
-      picture3.src = "images/Rectangle_47.png";
-      picture3.alt = "project4img2";
+      picture3.src = 'images/Rectangle_47.png';
+      picture3.alt = 'project4img2';
       sec.appendChild(picture3);
 
       project.appendChild(sec);
 
       return null;
     }
-    if (i >3) {
+    if (i > 3) {
       return null;
     }
     
@@ -182,7 +184,7 @@ function portfolioD() {
     project.appendChild(picture);
 
     const div1 = document.createElement('section');
-    div1.innerHTML = ` <h2 class="title">${el.title}</h2>
+    div1.innerHTML = `<h2 class="title">${el.title}</h2>
     <ul class="languages">
     ${el.languages.map((t) => `<li class="lang">${t}</li>`).join('')}
     </ul>
@@ -217,7 +219,7 @@ function popUpD() {
         <ul class="languages3">
         ${projects[i].languages.map((t) => `<li class="lang3">${t}</li>`).join('')}
         </ul>
-      <div class="cardPorejctsD${i+1}"></div>
+      <div class="cardPorejctsD${i + 1}"></div>
       <ul class="projectPicture2">
         <li class="imgBorder2"><img class="P2img" onclick="" src="${projects[i].image}" alt="project Img"><li>
         <li><img class="P2img" onclick="" src="${projects[i].image}" alt=""project Img2"><li>
@@ -249,8 +251,8 @@ function popUpD() {
       project.appendChild(box);
 
       const close = document.getElementById('projectCloseMD');
-      close.src = "images/ic_cross.png";
-      close.alt = "navbar menu close";
+      close.src = 'images/ic_cross.png';
+      close.alt = 'navbar menu close';
       close.classList.add('projectClose');
       close.addEventListener('click', () => {
         const Psec = document.getElementById('PortfolioD');
