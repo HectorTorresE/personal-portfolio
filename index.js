@@ -93,10 +93,11 @@ function popUp() {
       close.addEventListener('click', () => {
         Container.remove();
         close.remove();
+        const Psec = document.getElementById('PortfolioM');
+        Psec.classList.remove('MenuInvisible')
       });
       project.appendChild(close);
       
-
       Container.innerHTML = `
       <h1 class="name">${projects[i].title}</h1>
         <ul class="languages2">
@@ -120,7 +121,9 @@ function popUp() {
       </ul>`;
 
       project.appendChild(Container);
-      
+
+      const Psec = document.getElementById('PortfolioM');
+      Psec.classList.add('MenuInvisible');
     });
     return null;
   });
@@ -207,18 +210,10 @@ function popUpD() {
 
       const Container = document.createElement('section');
       Container.classList.add('projectMargin');
-
-      const close = document.createElement('img');
-      close.src = "images/ic_cross.png";
-      close.alt = "navbar menu close"
-      close.classList.add('projectClose')
-      close.addEventListener('click', () => {
-        project.remove();
-      });
-      Container.appendChild(close);
       
 
       Container.innerHTML = `
+      <img id="projectCloseMD" class="projectClose" onclick="" src="images/ic_cross.png"alt="navbar menu">
       <h1 class="name2">${projects[i].title}</h1>
         <ul class="languages3">
         ${projects[i].languages.map((t) => `<li class="lang3">${t}</li>`).join('')}
@@ -253,7 +248,19 @@ function popUpD() {
       box.appendChild(Container);
 
       project.appendChild(box);
+
+      const close = document.getElementById('projectCloseMD');
+      close.src = "images/ic_cross.png";
+      close.alt = "navbar menu close"
+      close.classList.add('projectClose')
+      close.addEventListener('click', () => {
+        const Psec = document.getElementById('PortfolioD');
+        Psec.classList.remove('MenuInvisible')
+        box.remove();
+      });
       
+      const Psec = document.getElementById('PortfolioD');
+        Psec.classList.add('MenuInvisible')
     });
     return null;
   });
