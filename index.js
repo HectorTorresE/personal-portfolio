@@ -175,3 +175,29 @@ field.forEach((field) => {
   field.addEventListener('change', updateHandler);
   field.addEventListener('keypress', updateHandler);
 });
+
+const fieldM = Array.of(...document.getElementsByClassName('form-fieldM'));
+let fieldsM = { name: String, email: String, message: String };
+
+if (storageAvailable('localStorage')) {
+  if (localStorage.getItem('fieldsM')) {
+    fieldsM = JSON.parse(localStorage.getItem('fieldsM'));
+    fieldM.forEach((fieldM) => {
+      if (fieldsM[fieldM.id]) {
+        fieldM.value = fieldsM[fieldM.id];
+      }
+    });
+  }
+} else {
+  console.log('Local Storage not available');
+}
+
+const updateHandlerM = ({ target }) => {
+  fieldsM[target.id] = target.value;
+  localStorage.setItem('fieldsM', JSON.stringify(fieldsM));
+};
+
+fieldM.forEach((fieldM) => {
+  fieldM.addEventListener('change', updateHandlerM);
+  fieldM.addEventListener('keypress', updateHandlerM);
+});
