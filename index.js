@@ -105,7 +105,6 @@ FormD.addEventListener('submit', (e) => {
     FormErrorD.classList.add('MenuInvisible');
   }
 });
-
 FormD.addEventListener('submit', (e) => {
   if (emailD.value !== emailD.value.toLowerCase()) {
     FormErrorD.classList.remove('MenuInvisible');
