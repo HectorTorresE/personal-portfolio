@@ -171,13 +171,13 @@ body {
 }
 
 .imgBorder {
-  border: 2px solid #1A2236;
+  border: 2px solid #1a2236;
   box-sizing: border-box;
   height: 54px;
 }
 
 .imgBorder2 {
-  border: 2px solid #1A2236;
+  border: 2px solid #1a2236;
   box-sizing: border-box;
   height: 175px;
 }
@@ -195,7 +195,7 @@ body {
 .projectPicture {
   list-style-type: none;
   display: flex;
-  gap: 0px;
+  gap: 0;
   margin: 0px;
   padding-left: 0px;
 }
@@ -308,7 +308,7 @@ body {
 }
 
 .projectsFlex h1 {
-  color: #1A2236;
+  color: #1a2236;
   font-style: normal;
   font-weight: bolder;
   font-size: 20px;
@@ -323,11 +323,10 @@ body {
   line-height: 27px;
   color: #1a2236;
   border: 2px solid #1a2236;
-  width: 246px ;
+  width: 246px;
   height: 30px;
   text-align: center;
   padding-top: 7px;
-
 }
 
 .PDLink {
@@ -336,7 +335,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: #1a2236;
-  width: 246px ;
+  width: 246px;
   height: 30px;
   text-align: center;
   margin-right: 400px;
@@ -348,12 +347,11 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: #1a2236;
-  width: 246px ;
+  width: 246px;
   height: 30px;
   text-align: center;
   margin-left: 400px;
 }
-
 
 .lang3 {
   font-family: 'Poppins', sans-serif;
