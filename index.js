@@ -59,7 +59,7 @@ function portfolio() {
   const project = document.querySelector('div.portfolioM');
   projects.map((el, i) => {
     const picture = document.createElement('div');
-    let mg = 'project-picture' + (i + 1);
+    const mg = 'project-picture' + (i + 1);
     picture.classList.add(mg);
 
     const div1 = document.createElement('div');
@@ -131,8 +131,8 @@ function popUp() {
 
 function portfolioD() {
   projects.map((el, i) => {
-    let mg = 'card-deskotop' + (i + 1);
-    let mg1 = 'projects' + (i + 1);
+    const mg = 'card-deskotop' + (i + 1);
+    const mg1 = 'projects' + (i + 1);
     let project = document.getElementById(mg);
     if (i > 1) {
       project = document.getElementById(mg1);
@@ -212,7 +212,7 @@ function popUpD() {
 
       const Container = document.createElement('section');
       Container.classList.add('projectMargin');
-      
+
       Container.innerHTML = `
       <img id="projectCloseMD" class="projectClose" onclick="" src="images/ic_cross.png"alt="navbar menu">
       <h1 class="name2">${projects[i].title}</h1>
@@ -259,9 +259,9 @@ function popUpD() {
         Psec.classList.remove('MenuInvisible');
         box.remove();
       });
-      
+
       const Psec = document.getElementById('PortfolioD');
-        Psec.classList.add('MenuInvisible');
+      Psec.classList.add('MenuInvisible');
     });
     return null;
   });
