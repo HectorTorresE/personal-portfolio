@@ -59,7 +59,7 @@ function portfolio() {
   const project = document.querySelector('div.portfolioM');
   projects.map((el, i) => {
     const picture = document.createElement('div');
-    const mg = 'project-picture' + (i + 1);
+    const mg = `project-picture${i + 1}`;
     picture.classList.add(mg);
 
     const div1 = document.createElement('div');
@@ -98,7 +98,7 @@ function popUp() {
         Psec.classList.remove('MenuInvisible');
       });
       project.appendChild(close);
-      
+
       Container.innerHTML = `<h1 class="name">${projects[i].title}</h1>
         <ul class="languages2">
         ${projects[i].languages.map((t) => `<li class="lang2">${t}</li>`).join('')}
@@ -158,7 +158,7 @@ function portfolioD() {
       project.appendChild(picture);
 
       const sec = document.createElement('section');
-      sec.classList.add('group')
+      sec.classList.add('group');
       const picture2 = document.createElement('img');
       picture2.classList.add('img7');
       picture2.src = 'images/image-geometry_4.svg';
@@ -178,9 +178,9 @@ function portfolioD() {
     if (i > 3) {
       return null;
     }
-    
+
     const picture = document.createElement('div');
-    picture.classList.add('img' + (i + 1));
+    picture.classList.add(`img${i + 1}`);
     project.appendChild(picture);
 
     const div1 = document.createElement('section');
@@ -192,7 +192,7 @@ function portfolioD() {
     project.appendChild(div1);
     if (i === 1) {
       const picture2 = document.createElement('div');
-      picture2.classList.add('img' + (i + 2));
+      picture2.classList.add(`img${i + 2}`);
       project.appendChild(picture2);
     }
 
