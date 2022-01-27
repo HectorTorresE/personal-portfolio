@@ -21,8 +21,6 @@ const FormD = document.getElementById('formD');
 const FormErrorD = document.getElementById('lblErrorD');
 const emailD = document.getElementById('emailD');
 
-
-
 const openAndClose = function () {
   if (Menu.classList.contains('MenuInvisible')) {
     Menu.classList.remove('MenuInvisible');
