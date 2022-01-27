@@ -271,17 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
   popUp()
   portfolioD();
   popUpD();
-}
-                          
-const PortfolioM = document.getElementById('PortfolioM');
-const PortfolioMenu = document.getElementById('PortfolioMenu');
-const PBtn = document.getElementById('PBtn');
-const projectCloseM = document.getElementById('projectCloseM');
-
-const PortfolioD = document.getElementById('PortfolioD');
-const portfolioDMenu = document.getElementById('portfolioDMenu');
-const PDBtn = document.getElementById('PDBtn');
-const projectCloseMD = document.getElementById('projectCloseMD');
+});
 
 const Form = document.getElementById('form');
 const email = document.getElementById('email');
@@ -312,7 +302,6 @@ const closeMenuMobile = function () {
 };
 
 btnMenu.addEventListener('click', openAndClose);
-PBtn.addEventListener('click', openP);
 menuClose.addEventListener('click', openAndClose);
 
 links.forEach((element) => {

@@ -63,8 +63,8 @@ body {
 }
 
 .projectCloseM {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-left: 300px;
   padding-left: 10%;
 }
@@ -332,7 +332,6 @@ body {
   width: 350px;
   height: 235px;
 }
-
 
 .cardPorejcts3 {
   background-image: url(../images/Rectangle_23.png);
@@ -1325,7 +1324,7 @@ input {
   .projects .projects3 {
     display: flex;
     justify-content: center;
-    margin-top: -75px
+    margin-top: -75px;
   }
 
   .projects .projects3 .img4 {
