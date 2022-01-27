@@ -59,7 +59,7 @@ function portfolio() {
   const project = document.querySelector('div.portfolioM');
   projects.map((el, i) => {
     const picture = document.createElement('div');
-    picture.classList.add('project-picture'+ (i+1));
+    picture.classList.add('project-picture' + (i + 1));
 
     const div1 = document.createElement('div');
     div1.classList.add('card');
@@ -103,7 +103,7 @@ function popUp() {
         <ul class="languages2">
         ${projects[i].languages.map((t) => `<li class="lang2">${t}</li>`).join('')}
         </ul>
-      <div class="cardPorejcts${i+1}"></div>
+      <div class="cardPorejcts${i + 1}"></div>
       <ul class="projectPicture">
         <li class="imgBorder"><img class="P1img" onclick="" src="${projects[i].image}" alt="project Img"><li>
         <li><img class="P1img" onclick="" src="${projects[i].image}" alt=""project Img2"><li>
@@ -131,11 +131,11 @@ function popUp() {
 
 function portfolioD() {
   projects.map((el, i) => {
-    let project = document.getElementById('card-deskotop'+ (i+1));
+    let project = document.getElementById('card-deskotop' + (i + 1));
     if (i > 1) {
-      project = document.getElementById('projects'+ (i+1));
+      project = document.getElementById('projects' + (i + 1));
     }
-    if (i == 2) {
+    if (i === 2) {
       const picture = document.createElement('img');
       picture.classList.add('img4');
       picture.src = "images/Rectangle_27.svg";
@@ -148,7 +148,7 @@ function portfolioD() {
       project.appendChild(picture2);
       return null;
     }
-    if (i == 3) {
+    if (i === 3) {
       const picture = document.createElement('img');
       picture.classList.add('img6');
       picture.src = "images/image-geometry_5.svg";
@@ -178,7 +178,7 @@ function portfolioD() {
     }
     
     const picture = document.createElement('div');
-    picture.classList.add('img'+ (i+1));
+    picture.classList.add('img' + (i + 1));
     project.appendChild(picture);
 
     const div1 = document.createElement('section');
@@ -188,9 +188,9 @@ function portfolioD() {
     </ul>
     <a  href="#" class="project-linkD">See this project<img class="link-img" src="images/Union2.png" alt="project link"></a>`;
     project.appendChild(div1);
-    if (i == 1) {
+    if (i === 1) {
       const picture2 = document.createElement('div');
-      picture2.classList.add('img'+ (i+2));
+      picture2.classList.add('img' + (i + 2));
       project.appendChild(picture2);
     }
 
@@ -211,7 +211,6 @@ function popUpD() {
       const Container = document.createElement('section');
       Container.classList.add('projectMargin');
       
-
       Container.innerHTML = `
       <img id="projectCloseMD" class="projectClose" onclick="" src="images/ic_cross.png"alt="navbar menu">
       <h1 class="name2">${projects[i].title}</h1>
@@ -251,16 +250,16 @@ function popUpD() {
 
       const close = document.getElementById('projectCloseMD');
       close.src = "images/ic_cross.png";
-      close.alt = "navbar menu close"
-      close.classList.add('projectClose')
+      close.alt = "navbar menu close";
+      close.classList.add('projectClose');
       close.addEventListener('click', () => {
         const Psec = document.getElementById('PortfolioD');
-        Psec.classList.remove('MenuInvisible')
+        Psec.classList.remove('MenuInvisible');
         box.remove();
       });
       
       const Psec = document.getElementById('PortfolioD');
-        Psec.classList.add('MenuInvisible')
+        Psec.classList.add('MenuInvisible');
     });
     return null;
   });
@@ -268,7 +267,7 @@ function popUpD() {
 
 document.addEventListener('DOMContentLoaded', () => {
   portfolio();
-  popUp()
+  popUp();
   portfolioD();
   popUpD();
 });
