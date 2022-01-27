@@ -3,82 +3,6 @@ const Menu = document.getElementById('MenuP');
 const headerImg = document.getElementById('headerImg');
 const menuClose = document.getElementById('menuClose');
 const links = document.querySelectorAll('.mobileMenu li a');
-// const PortfolioM = document.getElementById('PortfolioM');
-// const PortfolioMenu = document.getElementById('PortfolioMenu');
-// const PBtn = document.getElementById('PBtn');
-// const projectCloseM = document.getElementById('projectCloseM');
-
-// const PortfolioD = document.getElementById('PortfolioD');
-// const portfolioDMenu = document.getElementById('portfolioDMenu');
-// const PDBtn = document.getElementById('PDBtn');
-// const projectCloseMD = document.getElementById('projectCloseMD');
-
-// const openAndClose = function () {
-//   if (Menu.classList.contains('MenuInvisible')) {
-//     Menu.classList.remove('MenuInvisible');
-//     Menu.classList.add('MenuVisible');
-//     headerImg.classList.add('MenuInvisible');
-//   } else if (Menu.classList.contains('MenuVisible')) {
-//     Menu.classList.add('MenuInvisible');
-//     Menu.classList.remove('MenuVisible');
-//     headerImg.classList.remove('MenuInvisible');
-//   }
-// };
-
-// const openP = function () {
-//   if (PortfolioM.classList.contains('MenuVisible')) {
-//     PortfolioM.classList.remove('MenuVisible');
-//     PortfolioM.classList.add('MenuInvisible');
-//     PortfolioMenu.classList.remove('MenuInvisible');
-//     PortfolioMenu.classList.add('MenuVisible');
-//   }
-// };
-
-// const closeP = function () {
-//   if (PortfolioMenu.classList.contains('MenuVisible')) {
-//     PortfolioMenu.classList.remove('MenuVisible');
-//     PortfolioMenu.classList.add('MenuInvisible');
-//     PortfolioM.classList.remove('MenuInvisible');
-//     PortfolioM.classList.add('MenuVisible');
-//   }
-// };
-
-// const openPD = function () {
-//   if (PortfolioD.classList.contains('MenuVisible')) {
-//     PortfolioD.classList.remove('MenuVisible');
-//     PortfolioD.classList.add('MenuInvisible');
-//     portfolioDMenu.classList.remove('MenuInvisible');
-//     portfolioDMenu.classList.add('MenuVisible');
-//   }
-// };
-
-// const closePD = function () {
-//   if (portfolioDMenu.classList.contains('MenuVisible')) {
-//     portfolioDMenu.classList.remove('MenuVisible');
-//     portfolioDMenu.classList.add('MenuInvisible');
-//     PortfolioD.classList.remove('MenuInvisible');
-//     PortfolioD.classList.add('MenuVisible');
-//   }
-// };
-
-// const closeMenuMobile = function () {
-//   if (Menu.classList.contains('MenuVisible')) {
-//     Menu.classList.add('MenuInvisible');
-//     Menu.classList.remove('MenuVisible');
-//     headerImg.classList.remove('MenuInvisible');
-//   }
-// };
-
-// btnMenu.addEventListener('click', openAndClose);
-// PBtn.addEventListener('click', openP);
-// projectCloseM.addEventListener('click', closeP);
-// PDBtn.addEventListener('click', openPD);
-// projectCloseMD.addEventListener('click', closePD);
-// menuClose.addEventListener('click', openAndClose);
-
-// links.forEach((element) => {
-//   element.addEventListener('click', closeMenuMobile);
-// });
 
 const projects = [
   {
@@ -202,8 +126,144 @@ function popUp() {
   });
 }
 
+function portfolioD() {
+  projects.map((el, i) => {
+    let project = document.getElementById('card-deskotop'+ (i+1));
+    if (i > 1) {
+      project = document.getElementById('projects'+ (i+1));
+    }
+    if (i == 2) {
+      const picture = document.createElement('img');
+      picture.classList.add('img4');
+      picture.src = "images/Rectangle_27.svg";
+      picture.alt = "project3img";
+      const picture2 = document.createElement('img');
+      picture2.classList.add('img5');
+      picture2.src = "images/image-geometry_3.svg";
+      picture2.alt = "project3img2";
+      project.appendChild(picture);
+      project.appendChild(picture2);
+      return null;
+    }
+    if (i == 3) {
+      const picture = document.createElement('img');
+      picture.classList.add('img6');
+      picture.src = "images/image-geometry_5.svg";
+      picture.alt = "project4img";
+      project.appendChild(picture);
+
+      const sec = document.createElement('section');
+      sec.classList.add('group')
+      const picture2 = document.createElement('img');
+      picture2.classList.add('img7');
+      picture2.src = "images/image-geometry_4.svg";
+      picture2.alt = "project4img";
+      sec.appendChild(picture2);
+
+      const picture3 = document.createElement('img');
+      picture3.classList.add('img8');
+      picture3.src = "images/Rectangle_47.png";
+      picture3.alt = "project4img2";
+      sec.appendChild(picture3);
+
+      project.appendChild(sec);
+
+      return null;
+    }
+    if (i >3) {
+      return null;
+    }
+    
+    const picture = document.createElement('div');
+    picture.classList.add('img'+ (i+1));
+    project.appendChild(picture);
+
+    const div1 = document.createElement('section');
+    div1.innerHTML = ` <h2 class="title">${el.title}</h2>
+    <ul class="languages">
+    ${el.languages.map((t) => `<li class="lang">${t}</li>`).join('')}
+    </ul>
+    <a  href="#" class="project-linkD">See this project<img class="link-img" src="images/Union2.png" alt="project link"></a>`;
+    project.appendChild(div1);
+    if (i == 1) {
+      const picture2 = document.createElement('div');
+      picture2.classList.add('img'+ (i+2));
+      project.appendChild(picture2);
+    }
+
+    return null;
+  });
+}
+
+function popUpD() {
+  const buttons = document.querySelectorAll('a.project-linkD');
+  const buttonArr = Array.from(buttons);
+  buttonArr.map((el, i) => {
+    el.addEventListener('click', () => {
+      const project = document.getElementById('portfoiloDMenu');
+
+      const box = document.createElement('div');
+      box.classList.add('projectBox');
+
+      const Container = document.createElement('section');
+      Container.classList.add('projectMargin');
+
+      const close = document.createElement('img');
+      close.src = "images/ic_cross.png";
+      close.alt = "navbar menu close"
+      close.classList.add('projectClose')
+      close.addEventListener('click', () => {
+        project.remove();
+      });
+      Container.appendChild(close);
+      
+
+      Container.innerHTML = `
+      <h1 class="name2">${projects[i].title}</h1>
+        <ul class="languages3">
+        ${projects[i].languages.map((t) => `<li class="lang3">${t}</li>`).join('')}
+        </ul>
+      <div class="cardPorejctsD${i+1}"></div>
+      <ul class="projectPicture2">
+        <li class="imgBorder2"><img class="P2img" onclick="" src="${projects[i].image}" alt="project Img"><li>
+        <li><img class="P2img" onclick="" src="${projects[i].image}" alt=""project Img2"><li>
+        <li><img class="P2img" onclick="" src="${projects[i].image}" alt=""project Img3"><li>
+        <li><img class="P2img" onclick="" src="${projects[i].image}" alt=""project Img4"><li>
+      </ul>
+      <div class="flexP">
+        <p class="descriptionPD">
+        ${projects[i].description}
+        </p>
+        <ul class="linksPD">
+          <li class="PLink">See live <img class="link-img" src="images/ic_link.png" alt="project demo">
+          </li>
+          <li class="PLink">See source <img class="link-img" src="images/Vector.svg" alt="project github">
+          </li>
+        </ul>
+        <ul class="NextPD">
+          <li class="PDLink"><img class="link-img2" src="images/Union_(1).svg"
+                  alt="project Arrow Previous">Previous project
+          </li>
+          <li class="PDLink1">Next project<img class="link-img" src="images/Union.svg"
+                  alt="project Arrow Next">
+          </li>
+        </ul>
+      </div>`;
+
+      box.appendChild(Container);
+
+      project.appendChild(box);
+      
+    });
+    return null;
+  });
+}
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   portfolio();
   popUp()
+  portfolioD();
+  popUpD();
 });
