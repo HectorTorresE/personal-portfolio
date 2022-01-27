@@ -106,7 +106,6 @@ FormD.addEventListener('submit', (e) => {
   }
 });
 
-
 FormD.addEventListener('submit', (e) => {
   if (emailD.value !== emailD.value.toLowerCase()) {
     FormErrorD.classList.remove('MenuInvisible');
@@ -115,7 +114,6 @@ FormD.addEventListener('submit', (e) => {
     FormErrorD.classList.add('MenuInvisible');
   }
 });
-
 
 function storageAvailable(type) {
   let storage;
