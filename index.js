@@ -175,5 +175,3 @@ field.forEach((field) => {
   field.addEventListener('change', updateHandler);
   field.addEventListener('keypress', updateHandler);
 });
-
-
