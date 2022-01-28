@@ -18,6 +18,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #fff;
+  z-index: 10;
 }
 
 .headline {
@@ -63,10 +64,9 @@ body {
 }
 
 .projectCloseM {
-  margin: 0;
+  display: flex;
+  margin: 5%;
   padding: 0;
-  margin-left: 100%;
-  padding-left: 10%;
 }
 
 .projectClose {
@@ -173,7 +173,6 @@ body {
 .imgBorder {
   border: 2px solid #1a2236;
   box-sizing: border-box;
-  height: 54px;
 }
 
 .imgBorder2 {
@@ -188,16 +187,15 @@ body {
 }
 
 .P1img {
-  width: 86.3px;
-  height: 50px;
+  width: 100%;
 }
 
 .projectPicture {
   list-style-type: none;
   display: flex;
-  gap: 0;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .projectPicture2 {
@@ -268,16 +266,100 @@ body {
   gap: 10px;
 }
 
-.cardPorejctsD {
-  background-image: url(../images/Rectangle_34.svg);
+.flexr {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cardPorejctsD1 {
+  background-image: url(../images/Rectangle_21.svg);
   background-repeat: no-repeat;
   background-size: 1179px 680px;
   width: 1179px;
   height: 650px;
 }
 
+.cardPorejctsD2 {
+  background-image: url(../images/Rectangle_22.png);
+  background-repeat: no-repeat;
+  background-size: 1179px 680px;
+  width: 1179px;
+  height: 650px;
+}
+
+.cardPorejctsD3 {
+  background-image: url(../images/Rectangle_23.png);
+  background-repeat: no-repeat;
+  background-size: 1179px 680px;
+  width: 1179px;
+  height: 650px;
+}
+
+.cardPorejctsD4 {
+  background-image: url(../images/Rectangle_24.png);
+  background-repeat: no-repeat;
+  background-size: 1179px 680px;
+  width: 1179px;
+  height: 650px;
+}
+
+.cardPorejctsD5 {
+  background-image: url(../images/Rectangle_25.png);
+  background-repeat: no-repeat;
+  background-size: 1179px 680px;
+  width: 1179px;
+  height: 650px;
+}
+
+.cardPorejctsD6 {
+  background-image: url(../images/Rectangle_26.png);
+  background-repeat: no-repeat;
+  background-size: 1179px 680px;
+  width: 1179px;
+  height: 650px;
+}
+
+.cardPorejcts1 {
+  margin-top: 10px;
+  background-image: url(../images/Rectangle_21.png);
+  background-repeat: no-repeat;
+  background-size: 350px 270px;
+  height: 235px;
+}
+
 .cardPorejcts {
-  background-image: url(../images/Rectangle_34.svg);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 10%;
+}
+
+.cardPorejcts3 {
+  background-image: url(../images/Rectangle_23.png);
+  background-repeat: no-repeat;
+  background-size: 350px 270px;
+  width: 350px;
+  height: 235px;
+}
+
+.cardPorejcts4 {
+  background-image: url(../images/Rectangle_24.png);
+  background-repeat: no-repeat;
+  background-size: 350px 270px;
+  width: 350px;
+  height: 235px;
+}
+
+.cardPorejcts5 {
+  background-image: url(../images/Rectangle_25.png);
+  background-repeat: no-repeat;
+  background-size: 350px 270px;
+  width: 350px;
+  height: 235px;
+}
+
+.cardPorejcts6 {
+  background-image: url(../images/Rectangle_26.png);
   background-repeat: no-repeat;
   background-size: 350px 270px;
   width: 350px;
@@ -300,9 +382,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  width: 279px;
-  margin-left: 6%;
+  margin: 5%;
   gap: 0;
 }
 
@@ -388,6 +468,16 @@ body {
 }
 
 .project-link {
+  font-family: 'Poppins', sans-serif;
+  width: fit-content;
+  display: block;
+  border: 1px solid #fff;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-linkD {
   font-family: 'Poppins', sans-serif;
   width: fit-content;
   display: block;
@@ -1104,7 +1194,7 @@ input {
     align-items: flex-start;
   }
 
-  .projects .card-deskotop .img-size {
+  .projects .card-deskotop .img1 {
     background-image: url(../images/Rectangle_21.svg);
     width: 960px;
     height: 200px;
@@ -1141,7 +1231,6 @@ input {
     background-color: #1a2236;
     backdrop-filter: blur(1px);
     width: 400px;
-    height: 300px;
     flex-direction: column;
     margin-left: 0;
   }
@@ -1198,8 +1287,9 @@ input {
 
   .projects .projects2 .img-left {
     display: flex;
-    align-self: end;
+    align-self: inherit;
     width: 489px;
+    margin-top: 100px;
   }
 
   .projects2 .card-deskotop .title {
@@ -1233,17 +1323,18 @@ input {
   .projects .projects3 {
     display: flex;
     justify-content: center;
+    margin-top: -75px;
   }
 
   .projects .projects3 .img4 {
     width: 800px;
-    height: 465px;
+    height: 490px;
   }
 
   .projects .projects3 .img5 {
     width: 600px;
     height: 275.42px;
-    margin-top: 210px;
+    margin-top: 166px;
   }
 
   .projects .projects4 {
