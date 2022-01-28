@@ -87,6 +87,9 @@ function popUp() {
       const Container = document.createElement('div');
       Container.classList.add('projectsFlex');
 
+      const flexr = document.createElement('div');
+      flexr.classList.add('flexr');
+
       const close = document.createElement('img');
       close.src = 'images/Union24.png';
       close.alt = 'navbar menu close';
@@ -97,19 +100,22 @@ function popUp() {
         const Psec = document.getElementById('PortfolioM');
         Psec.classList.remove('MenuInvisible');
       });
-      project.appendChild(close);
+      flexr.appendChild(close);
+      project.appendChild(flexr);
 
       Container.innerHTML = `<h1 class="name">${projects[i].title}</h1>
         <ul class="languages2">
         ${projects[i].languages.map((t) => `<li class="lang2">${t}</li>`).join('')}
         </ul>
-      <div class="cardPorejcts${i + 1}"></div>
+      <div class="cardPorejcts">
+      <img  src="${projects[i].image}" alt=""project Img2">
       <ul class="projectPicture">
         <li class="imgBorder"><img class="P1img" onclick="" src="${projects[i].image}" alt="project Img"><li>
         <li><img class="P1img" onclick="" src="${projects[i].image}" alt=""project Img2"><li>
         <li><img class="P1img" onclick="" src="${projects[i].image}" alt=""project Img3"><li>
         <li><img class="P1img" onclick="" src="${projects[i].image}" alt=""project Img4"><li>
       </ul>
+      </div>
       <p class="descriptionP">
       ${projects[i].description}
       </p>
@@ -326,3 +332,13 @@ FormD.addEventListener('submit', (e) => {
     FormErrorD.classList.add('MenuInvisible');
   }
 });
+
+function scroll() {
+
+  var $body = $(document);
+  $body.bind('scroll', function() {
+      if ($body.scrollLeft() !== 0) {
+          $body.scrollLeft(0);
+      }
+  });
+}

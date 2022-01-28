@@ -18,6 +18,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #fff;
+  z-index: 10;
 }
 
 .headline {
@@ -63,11 +64,12 @@ body {
 }
 
 .projectCloseM {
-  margin: 0;
+  display: flex;
+  margin: 5%;
   padding: 0;
-  margin-left: 300px;
-  padding-left: 10%;
 }
+
+
 
 .projectClose {
   margin: 0;
@@ -173,7 +175,6 @@ body {
 .imgBorder {
   border: 2px solid #1a2236;
   box-sizing: border-box;
-  height: 54px;
 }
 
 .imgBorder2 {
@@ -188,16 +189,15 @@ body {
 }
 
 .P1img {
-  width: 86.3px;
-  height: 50px;
+  width: 100%;
 }
 
 .projectPicture {
   list-style-type: none;
   display: flex;
-  gap: 0;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .projectPicture2 {
@@ -268,6 +268,11 @@ body {
   gap: 10px;
 }
 
+.flexr{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .cardPorejctsD1 {
   background-image: url(../images/Rectangle_21.svg);
   background-repeat: no-repeat;
@@ -321,16 +326,14 @@ body {
   background-image: url(../images/Rectangle_21.png);
   background-repeat: no-repeat;
   background-size: 350px 270px;
-  width: 350px;
   height: 235px;
 }
 
-.cardPorejcts2 {
-  background-image: url(../images/Rectangle_22.png);
-  background-repeat: no-repeat;
-  background-size: 350px 270px;
-  width: 350px;
-  height: 235px;
+.cardPorejcts {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 10%;
 }
 
 .cardPorejcts3 {
@@ -381,9 +384,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  width: 279px;
-  margin-left: 6%;
+  margin: 5%;
   gap: 0;
 }
 
