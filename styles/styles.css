@@ -69,8 +69,6 @@ body {
   padding: 0;
 }
 
-
-
 .projectClose {
   margin: 0;
   padding: 0;
@@ -268,7 +266,7 @@ body {
   gap: 10px;
 }
 
-.flexr{
+.flexr {
   display: flex;
   justify-content: flex-end;
 }

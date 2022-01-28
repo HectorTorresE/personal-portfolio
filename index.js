@@ -333,16 +333,6 @@ FormD.addEventListener('submit', (e) => {
   }
 });
 
-function scroll() {
-
-  var $body = $(document);
-  $body.bind('scroll', function() {
-      if ($body.scrollLeft() !== 0) {
-          $body.scrollLeft(0);
-      }
-  });
-}
-
 function storageAvailable(type) {
   let storage;
   try {
